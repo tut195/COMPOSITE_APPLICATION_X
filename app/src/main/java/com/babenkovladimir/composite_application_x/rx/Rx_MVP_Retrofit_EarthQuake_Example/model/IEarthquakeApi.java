@@ -1,8 +1,7 @@
-package com.pharosproduction.earthquakeapp.model;
+package com.babenkovladimir.composite_application_x.rx.Rx_MVP_Retrofit_EarthQuake_Example.model;
 
-import com.pharosproduction.earthquakeapp.model.entity.EarthquakeData;
+import com.babenkovladimir.composite_application_x.rx.Rx_MVP_Retrofit_EarthQuake_Example.model.entity.EarthquakeData;
 import rx.Observable;
-
 
 public interface IEarthquakeApi {
 

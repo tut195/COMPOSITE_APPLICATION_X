@@ -1,12 +1,11 @@
 
 
-package com.pharosproduction.earthquakeapp.model.entity;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.babenkovladimir.composite_application_x.rx.Rx_MVP_Retrofit_EarthQuake_Example.model.entity;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import java.util.ArrayList;
+import java.util.List;
 
 public class EarthquakeData {
 

@@ -1,4 +1,4 @@
-package com.pharosproduction.earthquakeapp.adapter;
+package com.babenkovladimir.composite_application_x.rx.Rx_MVP_Retrofit_EarthQuake_Example.adapter;
 
 import android.content.Context;
 import android.graphics.drawable.GradientDrawable;
@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import androidx.core.content.ContextCompat;
-import com.pharosproduction.earthquakeapp.R;
-import com.pharosproduction.earthquakeapp.model.entity.Feature;
+import com.babenkovladimir.composite_application_x.R;
+import com.babenkovladimir.composite_application_x.rx.Rx_MVP_Retrofit_EarthQuake_Example.model.entity.Feature;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -56,7 +56,7 @@ public class EarthquakesAdapter extends ArrayAdapter<Feature> {
       locationKmTextView.setText(location.substring(0, splitIndex + placeStep).trim());
       locationPlaceTextView.setText(location.substring(splitIndex + placeStep).trim());
     } else {
-      locationKmTextView.setText(getContext().getText(R.string.nearThe));
+      locationKmTextView.setText("Near the");
       locationPlaceTextView.setText(location);
     }
 

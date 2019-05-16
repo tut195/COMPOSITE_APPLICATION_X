@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_main"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".rx.Rx_MVP_Retrofit_EarthQuake_Example.view.EartQuakerActivity">
+  android:paddingTop="16dp"
+  android:paddingBottom="16dp"
+  android:paddingLeft="16dp"
+  android:paddingRight="16dp"
+  tools:context="com.babenkovladimir.composite_application_x.rx.Rx_MVP_Retrofit_EarthQuake_Example.view.EarthQuakerActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+  <ListView
+    android:id="@+id/earthquakes_list_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@null"/>
+
+  <TextView
+    android:id="@+id/oopsTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:textAppearance="?android:textAppearanceMedium"/>
+
+  <ProgressBar
+    android:id="@+id/loading_spinner"
+    style="@style/Widget.AppCompat.ProgressBar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"/>
+</RelativeLayout>

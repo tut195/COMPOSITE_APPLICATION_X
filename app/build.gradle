@@ -31,4 +31,18 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    //It helps us to convert json response to our java code
+    // Rx earthQuaker
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //Retrofit
+    //For our network requests
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'io.reactivex:rxjava:1.2.4'
+    // Additional for Retrofit
+    // EarthQuaker
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
 }

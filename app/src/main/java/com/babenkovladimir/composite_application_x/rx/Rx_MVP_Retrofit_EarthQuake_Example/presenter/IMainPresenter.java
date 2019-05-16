@@ -1,4 +1,4 @@
-package com.pharosproduction.earthquakeapp.presenter;
+package com.babenkovladimir.composite_application_x.rx.Rx_MVP_Retrofit_EarthQuake_Example.presenter;
 
 /**
  * Created by Volt
