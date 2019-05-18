@@ -1,33 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
   package="com.babenkovladimir.composite_application_x">
 
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme"
+    tools:ignore="GoogleAppIndexingWarning">
 
-    <application
-      android:allowBackup="true"
-      android:icon="@mipmap/ic_launcher"
-      android:label="@string/app_name"
-      android:roundIcon="@mipmap/ic_launcher_round"
-      android:supportsRtl="true"
-      android:theme="@style/AppTheme">
-        <activity
-          android:label="EarthQuakerExample"
-          android:name=".rx.Rx_MVP_Retrofit_EarthQuake_Example.view.EarthQuakerActivity">
-        </activity>
-        <activity
-          android:label="Rx Navigating"
-          android:name=".rx.RxNavigatingActivity">
-        </activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+    <activity android:name=".MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-    </application>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+
+    <activity android:name=".mvp.mvp_keeping_presenters_alive_kotlin.SurvivingPresenterActivity"/>
+
+    <activity android:name=".mvp.mvp_keeping_presenters_alive_java.IntroActivity"/>
+
+    <activity android:name=".mvp.MvpNavigatingActivity"/>
+
+    <activity
+      android:label="EarthQuakerExample"
+      android:name=".rx.Rx_MVP_Retrofit_EarthQuake_Example.view.EarthQuakerActivity"/>
+
+    <activity
+      android:label="Rx Navigating"
+      android:name=".rx.RxNavigatingActivity"/>
+
+  </application>
 
 </manifest>
