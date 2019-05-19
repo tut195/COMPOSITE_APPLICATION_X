@@ -32,6 +32,14 @@
       android:text="Mvp Survive Lifecycle Java"
       android:textAllCaps="false"/>
 
+    <Button
+      android:id="@+id/navigateMvpMoxyxKotlin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="Mvp Moxyx Kotlin"
+      android:textAllCaps="false"/>
+
   </LinearLayout>
 
 

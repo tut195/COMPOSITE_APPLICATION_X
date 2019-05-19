@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".mvp.moxy_x_implementation.moxyx.MoxyxActivityKotlin">
+
+  <TextView
+    android:id="@+id/presenter_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:textAlignment="center"
+    android:textSize="20sp"
+    tools:text="Count will appear here"/>
+
+  <Button
+    android:id="@+id/start"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:padding="20dp"
+    android:onClick="incrementButtonPressed"
+    android:text="Increment"/>
+
+
+  <Button
+    android:id="@+id/stop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:padding="20dp"
+    android:onClick="decrementButtonPressed"
+    android:text="Decrement"/>
+
+</LinearLayout>
