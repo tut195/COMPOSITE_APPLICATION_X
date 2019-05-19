@@ -22,21 +22,25 @@
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
-
-    <activity android:name=".mvp.mvp_keeping_presenters_alive_kotlin.SurvivingPresenterActivity"/>
-
-    <activity android:name=".mvp.mvp_keeping_presenters_alive_java.IntroActivity"/>
-
-    <activity android:name=".mvp.MvpNavigatingActivity"/>
-
+    <activity
+      android:label="Sutviving Presenter Kotlin"
+      android:name=".mvp.mvp_keeping_presenters_alive_kotlin.SurvivingPresenterActivity"/>
+    <activity
+      android:label="Surviving Presenter Java"
+      android:name=".mvp.mvp_keeping_presenters_alive_java.IntroActivity"/>
+    <activity
+      android:label="MVP Navigating"
+      android:name=".mvp.MvpNavigatingActivity"/>
     <activity
       android:label="EarthQuakerExample"
       android:name=".rx.Rx_MVP_Retrofit_EarthQuake_Example.view.EarthQuakerActivity"/>
-
     <activity
       android:label="Rx Navigating"
       android:name=".rx.RxNavigatingActivity"/>
 
+    <activity
+      android:label="Moxy X"
+      android:name=".mvp.moxy_x_implementation.moxyx.MoxyxActivityKotlin"/>
   </application>
 
 </manifest>
