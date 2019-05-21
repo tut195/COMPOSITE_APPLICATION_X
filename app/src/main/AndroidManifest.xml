@@ -10,6 +10,7 @@
     android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"
+    android:name=".application.App"
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme"
@@ -41,6 +42,11 @@
     <activity
       android:label="Moxy X"
       android:name=".mvp.moxy_x_implementation.moxyx.MoxyxActivityKotlin"/>
+
+    <activity
+      android:label="Rx Repository Pattern"
+      android:name="com.babenkovladimir.composite_application_x.rx.rx_repository.view.RxRepositoryActivity"/>
+
   </application>
 
 </manifest>
