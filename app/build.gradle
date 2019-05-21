@@ -4,7 +4,7 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
-// Kotlin annotation processor MoxyX
+// Kotlin annotation processor MoxyX, rx-repository
 apply plugin: 'kotlin-kapt'
 
 android {
@@ -23,6 +23,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    // May be a reason of bug???
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
 }
 
 dependencies {
@@ -36,7 +41,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
     //It helps us to convert json response to our java code
-    // Rx earthQuaker
+    // Rx earthQuaker // - no Used????
     implementation 'com.google.code.gson:gson:2.8.5'
 
     //Retrofit
@@ -44,14 +49,28 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
     implementation 'io.reactivex:rxandroid:1.2.1'
     implementation 'io.reactivex:rxjava:1.2.4'
+
+    //
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
     // Additional for Retrofit
     // EarthQuaker
     implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+    // Special for RxJava2CallAdapterFactory- rx_repository
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
 
     // MoxyX
 
     implementation 'tech.schoolhelper:moxy-x:1.7.0'
     kapt 'tech.schoolhelper:moxy-x-compiler:1.7.0'
     implementation 'tech.schoolhelper:moxy-x-androidx:1.7.0'
+
+    // Room
+    implementation 'android.arch.persistence.room:runtime:1.1.1'
+    implementation 'android.arch.persistence.room:rxjava2:1.1.1'
+    kapt 'android.arch.persistence.room:compiler:1.1.1'
+
+    // Timber
+    implementation 'com.jakewharton.timber:timber:4.5.1'
 }
