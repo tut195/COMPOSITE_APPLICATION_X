@@ -45,7 +45,15 @@
 
     <activity
       android:label="Rx Repository Pattern"
-      android:name="com.babenkovladimir.composite_application_x.rx.rx_repository.view.RxRepositoryActivity"/>
+      android:name=".rx.rx_repository.view.RxRepositoryActivity"/>
+
+    <activity
+      android:label="ViewPager"
+      android:name=".abdroid_base_materials.viewPager.ViewPagerActivity"/>
+
+    <activity
+      android:label="Android Base"
+      android:name=".abdroid_base_materials.AndroidBaseActivity"/>
 
   </application>
 
