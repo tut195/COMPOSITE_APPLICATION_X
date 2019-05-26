@@ -38,23 +38,21 @@
     <activity
       android:label="Rx Navigating"
       android:name=".rx.RxNavigatingActivity"/>
-
     <activity
       android:label="Moxy X"
       android:name=".mvp.moxy_x_implementation.moxyx.MoxyxActivityKotlin"/>
-
     <activity
       android:label="Rx Repository Pattern"
       android:name=".rx.rx_repository.view.RxRepositoryActivity"/>
-
     <activity
       android:label="ViewPager"
       android:name=".abdroid_base_materials.viewPager.ViewPagerActivity"/>
-
     <activity
       android:label="Android Base"
       android:name=".abdroid_base_materials.AndroidBaseActivity"/>
-
+    <activity
+      android:label="Handler"
+      android:name=".abdroid_base_materials.handler.HandlerActivity"/>
   </application>
 
 </manifest>

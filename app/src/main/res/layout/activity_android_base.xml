@@ -26,10 +26,14 @@
       android:text="View Pager"
       android:textAllCaps="false"/>
 
-
+    <Button
+      android:id="@+id/navigateHandlerActivity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="Handler"
+      android:textAllCaps="false"/>
 
   </LinearLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

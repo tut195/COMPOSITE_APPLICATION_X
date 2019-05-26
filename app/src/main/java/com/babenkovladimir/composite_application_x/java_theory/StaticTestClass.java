@@ -12,6 +12,12 @@ class StaticTestClass {
 
 class Test{
 
+
+  @Override
+  public int hashCode() {
+    return super.hashCode();
+  }
+
   {LocalClass c = new StaticTestClass().new LocalClass();
   }
 }
