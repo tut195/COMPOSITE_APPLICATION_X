@@ -15,6 +15,17 @@
     android:supportsRtl="true"
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
+    <activity
+      android:label="Executers"
+      android:name=".concurrent.executers.ExecutersActivity"/>
+
+    <activity
+      android:label="Java concurent"
+      android:name=".concurrent.JavaConcurent"/>
+
+    <activity
+      android:label="Threads"
+      android:name=".concurrent.threads.ThreadsActivity"/>
 
     <activity android:name=".MainActivity">
       <intent-filter>
