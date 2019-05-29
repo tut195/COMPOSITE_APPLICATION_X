@@ -16,17 +16,26 @@
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
     <activity
+      android:label="Non Blocking Algorithms"
+      android:name=".concurrent.nonblocking_algorithm.NonblockingAlgorithmActivity"/>
+
+    <activity
+      android:label="Completable Future"
+      android:name=".concurrent.compleatable_future.CompletableFutureActivity"/>
+
+    <activity
+      android:label="Callable"
+      android:name=".concurrent.callable.CallableActivity"/>
+
+    <activity
       android:label="Executers"
       android:name=".concurrent.executers.ExecutersActivity"/>
-
     <activity
       android:label="Java concurent"
       android:name=".concurrent.JavaConcurent"/>
-
     <activity
       android:label="Threads"
       android:name=".concurrent.threads.ThreadsActivity"/>
-
     <activity android:name=".MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>

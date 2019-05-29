@@ -34,6 +34,30 @@
       android:text="To Java Executers"
       android:textAllCaps="false"/>
 
+    <Button
+      android:id="@+id/navigateJavaCallable"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="To Java Callable"
+      android:textAllCaps="false"/>
+
+    <Button
+      android:id="@+id/navigateCompletableFuteruActivity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="To Completable Future"
+      android:textAllCaps="false"/>
+
+    <Button
+      android:id="@+id/navigateNonBlockingAlgorithm"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="To Non Blocking Algorithm"
+      android:textAllCaps="false"/>
+
   </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
