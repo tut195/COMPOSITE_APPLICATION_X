@@ -76,6 +76,9 @@
     <activity
       android:label="Sqlite tutorial"
       android:name=".abdroid_base_materials.sqlite.SqliteActivity"/>
+    <activity
+      android:label="Reative Form Validation"
+      android:name=".rx.rx_form_validation.ReactiveFormValidationActivity"/>
   </application>
 
 </manifest>

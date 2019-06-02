@@ -34,6 +34,14 @@
       android:text="Rx Repository Pattern"
       android:textAllCaps="false"/>
 
+    <Button
+      android:id="@+id/navigateReactiveFormValidation"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="Rx Form Validation"
+      android:textAllCaps="false"/>
+
   </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
