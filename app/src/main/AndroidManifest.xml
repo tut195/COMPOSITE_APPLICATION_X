@@ -79,6 +79,9 @@
     <activity
       android:label="Reative Form Validation"
       android:name=".rx.rx_form_validation.ReactiveFormValidationActivity"/>
+    <activity
+      android:label="Retrofit intro"
+      android:name=".abdroid_base_materials.retrofit.RetrofitActivity"/>
   </application>
 
 </manifest>

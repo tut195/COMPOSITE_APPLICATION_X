@@ -42,6 +42,14 @@
       android:text="SqliteActivity"
       android:textAllCaps="false"/>
 
+    <Button
+      android:id="@+id/navigateRetrofitIntro"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="Retrofit Intro"
+      android:textAllCaps="false"/>
+
   </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
