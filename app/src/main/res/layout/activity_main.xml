@@ -48,6 +48,13 @@
       android:padding="16dp"
       android:text="To Java Concurrent"
       android:textAllCaps="false"/>
+    <Button
+      android:id="@+id/navigateUdemy"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="To Udemy"
+      android:textAllCaps="false"/>
 
   </LinearLayout>
 

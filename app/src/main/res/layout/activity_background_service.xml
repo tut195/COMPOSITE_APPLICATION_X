@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".udemy.services.background_services_demo.BackgroundServiceActivity">
+
+  <CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="43dp"
+    android:layout_marginStart="35dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:text="checking for testing"/>
+
+  <Button
+    android:id="@+id/btmStartStartedService"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="150dp"
+    android:onClick="startBackgroundService"
+    android:text="Start Background Service"/>
+
+  <Button
+    android:id="@+id/btmStopStartedService"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="21dp"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/btmStartStartedService"
+    android:onClick="stopBackgroundService"
+    android:text="Stop Background Service"/>
+
+</RelativeLayout>

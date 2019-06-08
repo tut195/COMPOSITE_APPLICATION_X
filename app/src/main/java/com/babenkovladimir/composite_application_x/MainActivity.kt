@@ -7,6 +7,7 @@ import com.babenkovladimir.composite_application_x.abdroid_base_materials.Androi
 import com.babenkovladimir.composite_application_x.concurrent.JavaConcurent
 import com.babenkovladimir.composite_application_x.mvp.MvpNavigatingActivity
 import com.babenkovladimir.composite_application_x.rx.RxNavigatingActivity
+import com.babenkovladimir.composite_application_x.udemy.UdemyDispatchigActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -19,5 +20,6 @@ class MainActivity : AppCompatActivity() {
         navigateMVPNvigating.setOnClickListener { startActivity(Intent(this@MainActivity, MvpNavigatingActivity::class.java)) }
         navigateAndroidBase.setOnClickListener { startActivity(Intent(this@MainActivity, AndroidBaseActivity::class.java)) }
         navigateJavaConcurrent.setOnClickListener { startActivity(Intent(this@MainActivity, JavaConcurent::class.java)) }
+        navigateUdemy.setOnClickListener { startActivity(Intent(this@MainActivity, UdemyDispatchigActivity::class.java)) }
     }
 }
