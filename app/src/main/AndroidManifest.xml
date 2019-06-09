@@ -15,8 +15,9 @@
     android:supportsRtl="true"
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
-
     <service android:name=".udemy.services.background_services_demo.MyBackgroundService"/>
+    <service android:name=".udemy.services.intent_service.MyIntentService"/>
+
     <activity
       android:label="Non Blocking Algorithms"
       android:name=".concurrent.nonblocking_algorithm.NonblockingAlgorithmActivity"/>
@@ -43,7 +44,7 @@
       </intent-filter>
     </activity>
     <activity
-      android:label="Sutviving Presenter Kotlin"
+      android:label="Surviving Presenter Kotlin"
       android:name=".mvp.mvp_keeping_presenters_alive_kotlin.SurvivingPresenterActivity"/>
     <activity
       android:label="Surviving Presenter Java"
@@ -90,6 +91,9 @@
     <activity
       android:label="Udemy"
       android:name=".udemy.UdemyDispatchigActivity"/>
+    <activity
+      android:label="Intent Service"
+      android:name=".udemy.services.intent_service.IntentServiceActivity"/>
   </application>
 
 </manifest>
