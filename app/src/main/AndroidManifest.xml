@@ -5,6 +5,8 @@
 
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/> <!-- For devives pre android Oreo -->
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
   <application
     android:allowBackup="true"
@@ -15,8 +17,24 @@
     android:supportsRtl="true"
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
-    <service android:name=".udemy.services.background_services_demo.MyBackgroundService"/>
-    <service android:name=".udemy.services.intent_service.MyIntentService"/>
+    <activity android:name=".udemy.services.job_intent_service.JobIntentServiceActivity">
+    </activity>
+
+    <service
+      android:exported="false"
+      android:name=".udemy.services.background_services_demo.MyBackgroundService"/>
+    <service
+      android:exported="false"
+      android:name=".udemy.services.intent_service.MyIntentService"/>
+    <service
+      android:exported="false"
+      android:name=".udemy.services.job_intent_service.MyJobIntentService"
+      android:permission="android.permission.BIND_JOB_SERVICE"/> <!-- Bind job service for post android OREO -->
+    <receiver android:name=".udemy.services.intent_service.MyBroadcastReceiver">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
 
     <activity
       android:label="Non Blocking Algorithms"

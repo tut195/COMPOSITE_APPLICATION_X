@@ -3,6 +3,7 @@ package com.babenkovladimir.composite_application_x.udemy.services.intent_servic
 import android.app.IntentService
 import android.content.Intent
 import android.util.Log
+import android.widget.Toast
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 
 class MyIntentService : IntentService("MyBackgroundThread") {
@@ -15,6 +16,7 @@ class MyIntentService : IntentService("MyBackgroundThread") {
     override fun onCreate() {
         super.onCreate()
         Log.d(TAG, "onCreate, Thread - ${Thread.currentThread().name}")
+        Toast.makeText(this@MyIntentService, "StartExecution started", Toast.LENGTH_SHORT).show()
     }
 
     override fun onHandleIntent(intent: Intent?) {
@@ -45,7 +47,8 @@ class MyIntentService : IntentService("MyBackgroundThread") {
 
     //Optional
     override fun onDestroy() {
-        Log.d(TAG, "onDestrot, Thread - ${Thread.currentThread().name}")
+        Toast.makeText(this@MyIntentService, "Execution is finished!!!", Toast.LENGTH_SHORT).show()
+        Log.d(TAG, "onDestroy, Thread - ${Thread.currentThread().name}")
         super.onDestroy()
     }
 }
