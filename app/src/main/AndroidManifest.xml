@@ -17,6 +17,8 @@
     android:supportsRtl="true"
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
+    <activity android:name=".rx.rxjava2_for_android_apps_RxBinding_and_RxLifecycle.RxBindingActivity">
+    </activity>
     <activity android:name=".rx.retrofit_rxjava2_kotlin.RetrofitRxJavaKotlinActivity">
     </activity>
     <activity android:name=".udemy.services.job_intent_service.JobIntentServiceActivity">
