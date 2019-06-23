@@ -58,6 +58,14 @@
       android:text="Rx Binding Rx Lifecycle"
       android:textAllCaps="false"/>
 
+    <Button
+      android:id="@+id/navigate_RxJava_GitHub_activity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="RxJava GitHub activity"
+      android:textAllCaps="false"/>
+
   </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
