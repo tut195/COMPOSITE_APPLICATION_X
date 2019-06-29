@@ -56,6 +56,14 @@
       android:text="To Udemy"
       android:textAllCaps="false"/>
 
+    <Button
+      android:id="@+id/navigateKotlin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="To Kotlin"
+      android:textAllCaps="false"/>
+
   </LinearLayout>
 
 

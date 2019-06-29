@@ -104,3 +104,8 @@ dependencies {
     implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
 
 }
+
+// Parcelizer project
+androidExtensions {
+    experimental = true
+}
