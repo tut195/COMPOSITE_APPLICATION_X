@@ -17,6 +17,8 @@
     android:supportsRtl="true"
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
+    <activity android:name=".abdroid_base_materials.recycler_view_diff_utils.RecyclerViewDiffUtilsActivity">
+    </activity>
     <activity android:name=".kotlin.parcelize.ParcelizeActivity">
     </activity>
     <activity android:name=".kotlin.KotlinNaviagationActivity">
