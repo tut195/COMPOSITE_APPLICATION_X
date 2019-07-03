@@ -65,6 +65,13 @@
       android:padding="16dp"
       android:text="RxJava GitHub activity"
       android:textAllCaps="false"/>
+    <Button
+      android:id="@+id/navigate_RxFromBookActivity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="RxJava From Book"
+      android:textAllCaps="false"/>
 
   </LinearLayout>
 
