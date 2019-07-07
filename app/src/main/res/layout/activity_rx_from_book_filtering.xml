@@ -4,7 +4,7 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".rx.rx_from_book.RxFromBookActivity">
+  tools:context=".rx.rx_from_book.filtering.RxFromBookFilteringActivity">
 
   <LinearLayout
     android:layout_width="match_parent"
@@ -12,13 +12,28 @@
     android:orientation="vertical">
 
     <Button
-      android:id="@+id/rxSyncCall"
+      android:id="@+id/rxMap"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:padding="16dp"
-      android:text="Rx sync call"
+      android:text="Rx Map"
       android:textAllCaps="false"/>
-  </LinearLayout>
+    <Button
+      android:id="@+id/rxFlatMap"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="Rx Flat Map"
+      android:textAllCaps="false"/>
 
+    <Button
+      android:id="@+id/rxDelay"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="Rx Delay"
+      android:textAllCaps="false"/>
+
+  </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

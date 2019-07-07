@@ -17,7 +17,13 @@
     android:supportsRtl="true"
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
-    <activity android:name=".rx.rx_from_book.RxFromBookActivity">
+    <activity android:name=".rx.rx_from_book.filtering.RxFromBookFilteringActivity">
+    </activity>
+    <activity android:name=".rx.rx_from_book.RxFromBookDispatchingActivity">
+    </activity>
+    <activity android:name=".services.ServicesDispatchingActivity">
+    </activity>
+    <activity android:name=".rx.rx_from_book.create.RxFromBookActivityCreate">
     </activity>
     <activity android:name=".abdroid_base_materials.recycler_view_diff_utils.RecyclerViewDiffUtilsActivity">
     </activity>
