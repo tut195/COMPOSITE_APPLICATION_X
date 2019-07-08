@@ -18,6 +18,7 @@ class RxFromBookFilteringActivity : AppCompatActivity() {
         rxMap.setOnClickListener { map() }
         rxFlatMap.setOnClickListener { flatMap() }
         rxDelay.setOnClickListener { delay() }
+        rxWordsExample.setOnClickListener { wordsExample() }
 
     }
 
@@ -75,6 +76,16 @@ class RxFromBookFilteringActivity : AppCompatActivity() {
         Observable
             .timer(1, TimeUnit.SECONDS)
             .flatMap { i -> Observable.just(1, 2, 3) }
+            .subscribe { printMy(it) }
+    }
+
+    // Из данного примера можно увидеть, что flatMap возвращает элементы фсинхронно
+    //
+    private fun wordsExample() {
+        val wordsObservable = Observable.from(listOf("Loren", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit"))
+
+        wordsObservable
+            .flatMap { word -> Observable.timer(word.length.toLong(), TimeUnit.SECONDS).map { x -> word } }
             .subscribe { printMy(it) }
     }
 
