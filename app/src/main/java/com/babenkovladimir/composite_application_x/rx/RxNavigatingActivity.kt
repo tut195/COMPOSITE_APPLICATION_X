@@ -8,6 +8,7 @@ import com.babenkovladimir.composite_application_x.rx.Rx_MVP_Retrofit_EarthQuake
 import com.babenkovladimir.composite_application_x.rx.retrofit_rxjava2_kotlin.RetrofitRxJavaKotlinActivity
 import com.babenkovladimir.composite_application_x.rx.rx_form_validation.ReactiveFormValidationActivity
 import com.babenkovladimir.composite_application_x.rx.rx_from_book.RxFromBookDispatchingActivity
+import com.babenkovladimir.composite_application_x.rx.rx_kotlin.RxKotlinActivity
 import com.babenkovladimir.composite_application_x.rx.rx_repository.view.RxRepositoryActivity
 import com.babenkovladimir.composite_application_x.rx.rxjava2_for_android_apps_RxBinding_and_RxLifecycle.RxBindingActivity
 import com.babenkovladimir.composite_application_x.rx.rxjava_github.RxJavaGitHubActivity
@@ -26,5 +27,6 @@ class RxNavigatingActivity : AppCompatActivity() {
         navigate_RxBinding_RxLifecycle.setOnClickListener { startActivity(Intent(this@RxNavigatingActivity, RxBindingActivity::class.java)) }
         navigate_RxJava_GitHub_activity.setOnClickListener { startActivity(Intent(this@RxNavigatingActivity, RxJavaGitHubActivity::class.java)) }
         navigate_RxFromBookActivity.setOnClickListener { startActivity(Intent(this@RxNavigatingActivity, RxFromBookDispatchingActivity::class.java)) }
+        navigate_RxKotlinActivity.setOnClickListener { startActivity(Intent(this@RxNavigatingActivity, RxKotlinActivity::class.java)) }
     }
 }

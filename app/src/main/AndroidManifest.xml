@@ -135,6 +135,7 @@
     <activity
       android:label="Intent Service"
       android:name=".udemy.services.intent_service.IntentServiceActivity"/>
+    <activity android:name=".rx.rx_kotlin.RxKotlinActivity"/>
   </application>
 
 </manifest>

@@ -73,6 +73,14 @@
       android:text="RxJava From Book"
       android:textAllCaps="false"/>
 
+    <Button
+      android:id="@+id/navigate_RxKotlinActivity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="Rx Kotlin"
+      android:textAllCaps="false"/>
+
   </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
