@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.babenkovladimir.composite_application_x.R
 import com.babenkovladimir.composite_application_x.rx.Rx_MVP_Retrofit_EarthQuake_Example.view.EarthQuakerActivity
+import com.babenkovladimir.composite_application_x.rx.reactive_programming_operators.ReactiveProgrammingOperatorsActivity
 import com.babenkovladimir.composite_application_x.rx.retrofit_rxjava2_kotlin.RetrofitRxJavaKotlinActivity
 import com.babenkovladimir.composite_application_x.rx.rx_form_validation.ReactiveFormValidationActivity
 import com.babenkovladimir.composite_application_x.rx.rx_from_book.RxFromBookDispatchingActivity
@@ -28,5 +29,6 @@ class RxNavigatingActivity : AppCompatActivity() {
         navigate_RxJava_GitHub_activity.setOnClickListener { startActivity(Intent(this@RxNavigatingActivity, RxJavaGitHubActivity::class.java)) }
         navigate_RxFromBookActivity.setOnClickListener { startActivity(Intent(this@RxNavigatingActivity, RxFromBookDispatchingActivity::class.java)) }
         navigate_RxKotlinActivity.setOnClickListener { startActivity(Intent(this@RxNavigatingActivity, RxKotlinActivity::class.java)) }
+        navigate_ReactiveProgrammingOperators.setOnClickListener { startActivity(Intent(this@RxNavigatingActivity, ReactiveProgrammingOperatorsActivity::class.java)) }
     }
 }

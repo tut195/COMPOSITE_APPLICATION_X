@@ -81,6 +81,14 @@
       android:text="Rx Kotlin"
       android:textAllCaps="false"/>
 
+    <Button
+      android:id="@+id/navigate_ReactiveProgrammingOperators"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="Reactive Programming Operators"
+      android:textAllCaps="false"/>
+
   </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

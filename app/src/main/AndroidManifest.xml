@@ -136,6 +136,7 @@
       android:label="Intent Service"
       android:name=".udemy.services.intent_service.IntentServiceActivity"/>
     <activity android:name=".rx.rx_kotlin.RxKotlinActivity"/>
+    <activity android:name=".rx.reactive_programming_operators.ReactiveProgrammingOperatorsActivity"/>
   </application>
 
 </manifest>
