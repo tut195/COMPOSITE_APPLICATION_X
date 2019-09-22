@@ -1,0 +1,23 @@
+Observable.create((ObservableOnSubscribe<Data>) e -> {
+
+	try {
+
+		Data data = mRestApi.getData();
+
+		e.onNext(data);
+
+	} catch (Exception ex) {
+
+		e.onError(ex);
+
+	}
+
+})
+
+.subscribeOn(Schedulers.io())
+
+.observeOn(AndroidSchedulers.mainThread())
+
+.subscribe(match -> Log.i("rest api, success"),
+
+	throwable -> Log.e("rest api, error: %s" + throwable.getMessage()));
