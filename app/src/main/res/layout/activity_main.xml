@@ -72,6 +72,14 @@
       android:text="To Services"
       android:textAllCaps="false"/>
 
+    <Button
+      android:id="@+id/navigateMosbyMvi"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="To MVI mosby"
+      android:textAllCaps="false"/>
+
   </LinearLayout>
 
 

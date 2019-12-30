@@ -106,6 +106,10 @@ dependencies {
     // RxPermissions
     implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
 
+    // Mosby mvi
+    implementation 'com.hannesdorfmann.mosby3:mvi:3.1.0'
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
+
 }
 
 // Parcelizer project

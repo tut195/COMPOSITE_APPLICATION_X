@@ -3,53 +3,57 @@
   xmlns:tools="http://schemas.android.com/tools"
   package="com.babenkovladimir.composite_application_x">
 
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- For devives pre android Oreo -->
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.INTERNET" />
+
   <application
+    android:name=".application.App"
     android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"
-    android:name=".application.App"
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
-    <activity android:name=".rx.rx_mobile_developer.RxMobileDeveloperAcivity"></activity>
-    <activity android:name=".rx.rx_from_book.filtering.RxFromBookFilteringActivity"></activity>
-    <activity android:name=".rx.rx_from_book.RxFromBookDispatchingActivity"></activity>
-    <activity android:name=".services.ServicesDispatchingActivity"></activity>
-    <activity android:name=".rx.rx_from_book.create.RxFromBookActivityCreate"></activity>
-    <activity android:name=".abdroid_base_materials.recycler_view_diff_utils.RecyclerViewDiffUtilsActivity"></activity>
-    <activity android:name=".kotlin.parcelize.ParcelizeActivity"></activity>
-    <activity android:name=".kotlin.KotlinNaviagationActivity"></activity>
+    <activity android:name=".mvi_mosby.MviActivity"></activity>
+    <activity android:name=".rx.rx_mobile_developer.RxMobileDeveloperAcivity" />
+    <activity android:name=".rx.rx_from_book.filtering.RxFromBookFilteringActivity" />
+    <activity android:name=".rx.rx_from_book.RxFromBookDispatchingActivity" />
+    <activity android:name=".services.ServicesDispatchingActivity" />
+    <activity android:name=".rx.rx_from_book.create.RxFromBookActivityCreate" />
+    <activity android:name=".abdroid_base_materials.recycler_view_diff_utils.RecyclerViewDiffUtilsActivity" />
+    <activity android:name=".kotlin.parcelize.ParcelizeActivity" />
+    <activity android:name=".kotlin.KotlinNaviagationActivity" />
     <activity
-      android:label="RxJava GitHub"
-      android:name=".rx.rxjava_github.RxJavaGitHubActivity" />
+      android:name=".rx.rxjava_github.RxJavaGitHubActivity"
+      android:label="RxJava GitHub" />
     <activity
-      android:label="RxBinding"
-      android:name=".rx.rxjava2_for_android_apps_RxBinding_and_RxLifecycle.RxBindingActivity" />
-    <activity android:name=".rx.retrofit_rxjava2_kotlin.RetrofitRxJavaKotlinActivity"></activity>
+      android:name=".rx.rxjava2_for_android_apps_RxBinding_and_RxLifecycle.RxBindingActivity"
+      android:label="RxBinding" />
+    <activity android:name=".rx.retrofit_rxjava2_kotlin.RetrofitRxJavaKotlinActivity" />
     <activity
-      android:label="Job Intent Service"
-      android:name=".udemy.services.job_intent_service.JobIntentServiceActivity" />
-
+      android:name=".udemy.services.job_intent_service.JobIntentServiceActivity"
+      android:label="Job Intent Service" />
     <activity
-      android:label="Non Blocking Algorithms"
-      android:name=".concurrent.nonblocking_algorithm.NonblockingAlgorithmActivity" />
+      android:name=".concurrent.nonblocking_algorithm.NonblockingAlgorithmActivity"
+      android:label="Non Blocking Algorithms" />
     <activity
-      android:label="Completable Future"
-      android:name=".concurrent.compleatable_future.CompletableFutureActivity" />
+      android:name=".concurrent.compleatable_future.CompletableFutureActivity"
+      android:label="Completable Future" />
     <activity
-      android:label="Callable"
-      android:name=".concurrent.callable.CallableActivity" /> <!-- Bind job service for post android OREO -->
+      android:name=".concurrent.callable.CallableActivity"
+      android:label="Callable" /> <!-- Bind job service for post android OREO -->
     <activity
-      android:label="Executers"
-      android:name=".concurrent.executers.ExecutersActivity" />
-
+      android:name=".concurrent.executers.ExecutersActivity"
+      android:label="Executers" />
     <activity
-      android:label="Java concurent"
-      android:name=".concurrent.JavaConcurent" />
+      android:name=".concurrent.JavaConcurent"
+      android:label="Java concurent" />
     <activity
-      android:label="Threads"
-      android:name=".concurrent.threads.ThreadsActivity" />
+      android:name=".concurrent.threads.ThreadsActivity"
+      android:label="Threads" />
     <activity android:name=".MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -58,78 +62,75 @@
       </intent-filter>
     </activity>
     <activity
-      android:label="Surviving Presenter Kotlin"
-      android:name=".mvp.mvp_keeping_presenters_alive_kotlin.SurvivingPresenterActivity" />
+      android:name=".mvp.mvp_keeping_presenters_alive_kotlin.SurvivingPresenterActivity"
+      android:label="Surviving Presenter Kotlin" />
     <activity
-      android:label="Surviving Presenter Java"
-      android:name=".mvp.mvp_keeping_presenters_alive_java.IntroActivity" />
+      android:name=".mvp.mvp_keeping_presenters_alive_java.IntroActivity"
+      android:label="Surviving Presenter Java" />
     <activity
-      android:label="MVP Navigating"
-      android:name=".mvp.MvpNavigatingActivity" />
+      android:name=".mvp.MvpNavigatingActivity"
+      android:label="MVP Navigating" />
     <activity
-      android:label="EarthQuakerExample"
-      android:name=".rx.Rx_MVP_Retrofit_EarthQuake_Example.view.EarthQuakerActivity" />
+      android:name=".rx.Rx_MVP_Retrofit_EarthQuake_Example.view.EarthQuakerActivity"
+      android:label="EarthQuakerExample" />
     <activity
-      android:label="Rx Navigating"
-      android:name=".rx.RxNavigatingActivity" />
+      android:name=".rx.RxNavigatingActivity"
+      android:label="Rx Navigating" />
     <activity
-      android:label="Moxy X"
-      android:name=".mvp.moxy_x_implementation.moxyx.MoxyxActivityKotlin" />
+      android:name=".mvp.moxy_x_implementation.moxyx.MoxyxActivityKotlin"
+      android:label="Moxy X" />
     <activity
-      android:label="Rx Repository Pattern"
-      android:name=".rx.rx_repository.view.RxRepositoryActivity" />
+      android:name=".rx.rx_repository.view.RxRepositoryActivity"
+      android:label="Rx Repository Pattern" />
     <activity
-      android:label="ViewPager"
-      android:name=".abdroid_base_materials.viewPager.ViewPagerActivity" />
+      android:name=".abdroid_base_materials.viewPager.ViewPagerActivity"
+      android:label="ViewPager" />
     <activity
-      android:label="Android Base"
-      android:name=".abdroid_base_materials.AndroidBaseActivity" />
+      android:name=".abdroid_base_materials.AndroidBaseActivity"
+      android:label="Android Base" />
     <activity
-      android:label="Handler"
-      android:name=".abdroid_base_materials.handler.HandlerActivity" />
+      android:name=".abdroid_base_materials.handler.HandlerActivity"
+      android:label="Handler" />
     <activity
-      android:label="Sqlite AddEditActivity"
-      android:name=".abdroid_base_materials.sqlite.AddEditNoteActivity" />
+      android:name=".abdroid_base_materials.sqlite.AddEditNoteActivity"
+      android:label="Sqlite AddEditActivity" />
     <activity
-      android:label="Sqlite tutorial"
-      android:name=".abdroid_base_materials.sqlite.SqliteActivity" />
+      android:name=".abdroid_base_materials.sqlite.SqliteActivity"
+      android:label="Sqlite tutorial" />
     <activity
-      android:label="Reative Form Validation"
-      android:name=".rx.rx_form_validation.ReactiveFormValidationActivity" />
+      android:name=".rx.rx_form_validation.ReactiveFormValidationActivity"
+      android:label="Reative Form Validation" />
     <activity
-      android:label="Retrofit intro"
-      android:name=".abdroid_base_materials.retrofit.RetrofitActivity" />
+      android:name=".abdroid_base_materials.retrofit.RetrofitActivity"
+      android:label="Retrofit intro" />
     <activity
-      android:label="Background Services"
-      android:name=".udemy.services.background_services_demo.BackgroundServiceActivity" />
+      android:name=".udemy.services.background_services_demo.BackgroundServiceActivity"
+      android:label="Background Services" />
     <activity
-      android:label="Udemy"
-      android:name=".udemy.UdemyDispatchigActivity" />
+      android:name=".udemy.UdemyDispatchigActivity"
+      android:label="Udemy" />
     <activity
-      android:label="Intent Service"
-      android:name=".udemy.services.intent_service.IntentServiceActivity" />
+      android:name=".udemy.services.intent_service.IntentServiceActivity"
+      android:label="Intent Service" />
     <activity android:name=".rx.rx_kotlin.RxKotlinActivity" />
     <activity android:name=".rx.reactive_programming_operators.ReactiveProgrammingOperatorsActivity" />
+
     <receiver android:name=".udemy.services.intent_service.MyBroadcastReceiver">
       <intent-filter>
         <action android:name="android.intent.action.BOOT_COMPLETED" />
       </intent-filter>
     </receiver>
+
     <service
-      android:exported="false"
-      android:name=".udemy.services.background_services_demo.MyBackgroundService" />
+      android:name=".udemy.services.background_services_demo.MyBackgroundService"
+      android:exported="false" />
     <service
-      android:exported="false"
-      android:name=".udemy.services.intent_service.MyIntentService" />
+      android:name=".udemy.services.intent_service.MyIntentService"
+      android:exported="false" />
     <service
-      android:exported="false"
       android:name=".udemy.services.job_intent_service.MyJobIntentService"
+      android:exported="false"
       android:permission="android.permission.BIND_JOB_SERVICE" />
   </application>
-  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- For devives pre android Oreo -->
-  <uses-permission android:name="android.permission.WAKE_LOCK" />
-
-  <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
