@@ -80,6 +80,14 @@
       android:text="To MVI mosby"
       android:textAllCaps="false"/>
 
+    <Button
+      android:id="@+id/navigateLayoutManager"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:text="To Layout Manager"
+      android:textAllCaps="false"/>
+
   </LinearLayout>
 
 

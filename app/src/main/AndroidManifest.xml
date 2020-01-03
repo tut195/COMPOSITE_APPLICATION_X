@@ -17,7 +17,8 @@
     android:supportsRtl="true"
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
-    <activity android:name=".mvi_mosby.MviActivity"></activity>
+    <activity android:name=".layout_manager.LayoutManagerActivity"></activity>
+    <activity android:name=".mvi_mosby.MviActivity" />
     <activity android:name=".rx.rx_mobile_developer.RxMobileDeveloperAcivity" />
     <activity android:name=".rx.rx_from_book.filtering.RxFromBookFilteringActivity" />
     <activity android:name=".rx.rx_from_book.RxFromBookDispatchingActivity" />

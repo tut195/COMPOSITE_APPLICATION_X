@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.babenkovladimir.composite_application_x.abdroid_base_materials.AndroidBaseActivity
 import com.babenkovladimir.composite_application_x.concurrent.JavaConcurent
 import com.babenkovladimir.composite_application_x.kotlin.KotlinNaviagationActivity
+import com.babenkovladimir.composite_application_x.layout_manager.LayoutManagerActivity
 import com.babenkovladimir.composite_application_x.mvi_mosby.MviActivity
 import com.babenkovladimir.composite_application_x.mvp.MvpNavigatingActivity
 import com.babenkovladimir.composite_application_x.rx.RxNavigatingActivity
@@ -27,5 +28,6 @@ class MainActivity : AppCompatActivity() {
         navigateKotlin.setOnClickListener { startActivity(Intent(this@MainActivity, KotlinNaviagationActivity::class.java)) }
         navigateServices.setOnClickListener { startActivity(Intent(this@MainActivity, ServicesDispatchingActivity::class.java)) }
         navigateMosbyMvi.setOnClickListener { startActivity(Intent(this@MainActivity, MviActivity::class.java)) }
+        navigateLayoutManager.setOnClickListener { startActivity(Intent(this@MainActivity, LayoutManagerActivity::class.java)) }
     }
 }
