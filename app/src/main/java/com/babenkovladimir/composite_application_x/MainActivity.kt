@@ -1,7 +1,10 @@
 package com.babenkovladimir.composite_application_x
 
 import android.content.Intent
+import android.hardware.biometrics.BiometricPrompt
+import android.os.Build
 import android.os.Bundle
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.babenkovladimir.composite_application_x.abdroid_base_materials.AndroidBaseActivity
 import com.babenkovladimir.composite_application_x.concurrent.JavaConcurent
@@ -13,9 +16,11 @@ import com.babenkovladimir.composite_application_x.rx.RxNavigatingActivity
 import com.babenkovladimir.composite_application_x.services.ServicesDispatchingActivity
 import com.babenkovladimir.composite_application_x.udemy.UdemyDispatchigActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import java.security.Signature
 
 class MainActivity : AppCompatActivity() {
 
+    @RequiresApi(Build.VERSION_CODES.P)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,5 +34,8 @@ class MainActivity : AppCompatActivity() {
         navigateServices.setOnClickListener { startActivity(Intent(this@MainActivity, ServicesDispatchingActivity::class.java)) }
         navigateMosbyMvi.setOnClickListener { startActivity(Intent(this@MainActivity, MviActivity::class.java)) }
         navigateLayoutManager.setOnClickListener { startActivity(Intent(this@MainActivity, LayoutManagerActivity::class.java)) }
+
+        val a = BiometricPrompt.Builder(this).build()
+
     }
 }
