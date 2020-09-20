@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
 
-
+// Custom View
 //        val linearLayout = LinearLayout(this)
 //        linearLayout.layoutParams = ActionBar.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
 //        val customView = OwnCustomView(this)
@@ -26,19 +26,25 @@ class MainActivity : AppCompatActivity() {
 //        setContentView(linearLayout)
 
 
-        setContentView(R.layout.activity_main_custom_layout)
+//        setContentView(R.layout.activity_main_custom_layout)
+//
+//        val customLayout = findViewById<CustomLayout>(R.id.custom_layout)
+//        val rnd = Random()
+//        for (i in 0..49) {
+//            val view = OwnCustomView(this)
+//            val width: Int = rnd.nextInt(200) + 50
+//            val height: Int = rnd.nextInt(100) + 100
+//            view.layoutParams = ViewGroup.LayoutParams(width, height)
+//            view.setPadding(20, 20, 20, 20)
+//
+//            customLayout.addView(view)
+//        }
 
-        val customLayout = findViewById<CustomLayout>(R.id.custom_layout)
-        val rnd = Random()
-        for (i in 0..49) {
-            val view = OwnCustomView(this)
-            val width: Int = rnd.nextInt(200) + 50
-            val height: Int = rnd.nextInt(100) + 100
-            view.layoutParams = ViewGroup.LayoutParams(width, height)
-            view.setPadding(20, 20, 20, 20)
+        // Rendering part
 
-            customLayout.addView(view)
-        }
+        setContentView(R.layout.activity_main_rendering)
+
+
     }
 
     companion object {

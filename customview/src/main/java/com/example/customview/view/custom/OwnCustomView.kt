@@ -107,6 +107,7 @@ class OwnCustomView(context: Context, attributeSet: AttributeSet?) : View(contex
         private val DEFAULT_FILL_COLOR = Color.BLUE
 
         // Пример с паттернм Строитель!
+        // В кнге это страница 32
         class Builder(private val context: Context) {
             private var topLeftColor = DEFAULT_FILL_COLOR
             private var topRightColor = DEFAULT_FILL_COLOR
@@ -117,6 +118,8 @@ class OwnCustomView(context: Context, attributeSet: AttributeSet?) : View(contex
                 this.topLeftColor = topLeftColor
                 return this
             }
+
+            // Continue adding fields by Builder Pattern
 
             fun build(): OwnCustomView = OwnCustomView(context)
 

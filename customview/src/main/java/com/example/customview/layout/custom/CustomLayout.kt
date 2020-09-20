@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import android.view.View
 import android.view.ViewGroup
 
-
+// Page 36
 class CustomLayout(context: Context, attributeSet: AttributeSet) : ViewGroup(context, attributeSet) {
 
     override fun onLayout(p0: Boolean, l: Int, t: Int, r: Int, b: Int) {
