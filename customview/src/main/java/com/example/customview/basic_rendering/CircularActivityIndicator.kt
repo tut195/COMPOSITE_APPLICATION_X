@@ -6,6 +6,8 @@ import android.graphics.Paint
 import android.graphics.Path
 import android.graphics.Region
 import android.util.AttributeSet
+import android.util.Log
+import android.view.MotionEvent
 import android.view.View
 
 class CircularActivityIndicator @JvmOverloads constructor(
@@ -18,6 +20,10 @@ class CircularActivityIndicator @JvmOverloads constructor(
 
     private var clipPath: Path? = null
 
+
+    private var isViewPressed = false
+
+
     init {
         foregroundPaint = Paint()
         foregroundPaint?.color = DEFAULT_FG_COLOR
@@ -27,6 +33,13 @@ class CircularActivityIndicator @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
+        if (isViewPressed) {
+            foregroundPaint?.color = PRESSED_FG_COLOR;
+        } else {
+            foregroundPaint?.color = DEFAULT_FG_COLOR;
+        }
+
+
 //        1) This will paint arc match_parent
 //        canvas?.drawArc(
 //            0F,
@@ -81,10 +94,40 @@ class CircularActivityIndicator @JvmOverloads constructor(
             (verMargin + circleSize).toFloat(),
             0F, selectedAngle.toFloat(), true, foregroundPaint!!
         )
+
+
+    }
+
+    override fun onTouchEvent(event: MotionEvent?): Boolean {
+        Log.d("TAG", "event - $event")
+//        return super.onTouchEvent(event)
+        // returns true  - same as setClickable(true)
+
+
+        Log.d("TAG", "touch: $event")
+        return when (event!!.action) {
+            MotionEvent.ACTION_DOWN -> {
+                isViewPressed = true
+                invalidate()
+                true
+            }
+            MotionEvent.ACTION_UP -> {
+                isViewPressed = false
+                invalidate()
+                true
+            }
+            else -> {
+                isViewPressed = false
+                invalidate()
+                false
+            }
+        }
     }
 
     companion object {
         private val DEFAULT_FG_COLOR = -0x10000
         private val DEFAULT_BG_COLOR = -0x5f5f60
+
+        private const val PRESSED_FG_COLOR = -0xffff01
     }
 }
