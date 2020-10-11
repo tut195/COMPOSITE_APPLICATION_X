@@ -1,0 +1,1 @@
+https://developers.google.com/web/android/custom-tabs/implementation-guide#tell_the_browser_what_urls_the_user_is_likely_to_open
