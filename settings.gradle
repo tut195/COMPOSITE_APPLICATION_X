@@ -1,3 +1,4 @@
+include ':chromecustomtabs'
 include ':lintexample'
 include ':customview'
 include ':app'

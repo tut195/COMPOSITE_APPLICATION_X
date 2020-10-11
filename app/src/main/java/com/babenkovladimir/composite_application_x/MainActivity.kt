@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         navigateMosbyMvi.setOnClickListener { startActivity(Intent(this@MainActivity, MviActivity::class.java)) }
         navigateLayoutManager.setOnClickListener { startActivity(Intent(this@MainActivity, LayoutManagerActivity::class.java)) }
 
-        val a = BiometricPrompt.Builder(this).build()
+        //val a = BiometricPrompt.Builder(this).build()
 
     }
 }
